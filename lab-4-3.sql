@@ -7,3 +7,11 @@
 -- +---------------+------------+-----------+-----------+
 
 
+SELECT
+teams.name
+,players.first_name
+,players.last_name
+,max(stats.home_run)
+
+FROM players
+INNER JOIN stats
